@@ -1,19 +1,19 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.jsx'
 
 
 import { init, miniApp } from '@telegram-apps/sdk';
+import { BrowserRouter } from "react-router";
+import "./styles/main.css"
 
 
 const initializeTelegramSDK = async () => {
   try {
-    await init();
+    void init();
 
 
     if (miniApp.ready.isAvailable()) {
-      await miniApp.ready();
+      miniApp.ready();
       console.log('Mini App готово');
     }
 
@@ -24,11 +24,11 @@ const initializeTelegramSDK = async () => {
 };
 
 
-initializeTelegramSDK();
+void initializeTelegramSDK();
 
 
 createRoot(document.getElementById('root') as HTMLElement).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
 )
