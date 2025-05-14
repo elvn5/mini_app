@@ -1,0 +1,33 @@
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #f0f0f0;
+  height: 3rem;
+
+  .ant-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.icon {
+  font-size: 14px;
+}

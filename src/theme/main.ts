@@ -3,7 +3,7 @@ import { theme } from "antd"
 export const lightTheme ={
   algorithm: theme.defaultAlgorithm,
     token: {
-  colorPrimary: '#00C27A',
+    colorPrimary: '#00C27A',
     colorBgContainer: '#f0fff4',
     colorBorder: '#d4f5e9',
     fontFamily: 'Poppins, sans-serif',
